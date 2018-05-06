@@ -1,0 +1,26 @@
+{
+    "name": "dh2y/think-ueditor",
+    "description": "ueditor for thinkphp5",
+    "homepage": "https://github.com/cinaofdai/think-ueditor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dh2y",
+            "email": "xiaodai54_long@163.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/cinaofdai/think-ueditor/issues"
+    },
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "dh2y\\ueditor\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    }
+}
