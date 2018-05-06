@@ -1,6 +1,6 @@
-# think-sms
+# think-ueditor
 The ThinkPHP5 ueditor
-短信通用SDK
+百度编辑器 composer模块
 ## 安装
 
 ### 一、执行命令安装
