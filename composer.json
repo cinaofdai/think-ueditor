@@ -3,6 +3,8 @@
     "description": "ueditor for thinkphp5",
     "homepage": "https://github.com/cinaofdai/think-ueditor",
     "license": "MIT",
+    "minimum-stability": "stable",
+    "version": "1.0",
     "authors": [
         {
             "name": "dh2y",
