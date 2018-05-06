@@ -36,6 +36,8 @@ composer require dh2y/think-ueditor
 ## 使用
 #### 添加配置文件
  1、默认配置在 conf下面的config.json
+ 
+ 
  2、需要自己的配置将 conf下面的ueditor.php复制到 extra目录下面（或者通过下面console添加配置文件）
  
 
