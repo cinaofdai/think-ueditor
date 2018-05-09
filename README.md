@@ -65,7 +65,10 @@ composer require dh2y/think-ueditor
 
 #### 前端调用
      
-     1、在think-sms/src/service/ 新增短信服务商类 Dh2y（列如短信服务商为：dh2y）
-     2、Dh2y类继承 MessageInterface 短信接口实现里面的方法（其实是抽象类）
-     3、实现里面的sendSms 和 getRequestUrl方法
-
+   >引用百度编辑器js
+```   
+  <!-- 配置文件 -->
+  <script type="text/javascript" src="__static__/admin/js/ueditor/ueditor.config.js"></script>
+  <!-- 编辑器源码文件 -->
+  <script type="text/javascript" src="__static__/admin/js/ueditor/ueditor.all.js"></script>
+```
