@@ -81,6 +81,7 @@ class UeditorController
         } else {
             echo $result;
         }
+		die;//防止框架打印出debug百度编辑器无法编辑
     }
 
     /**
