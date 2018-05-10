@@ -70,6 +70,21 @@ composer require dh2y/think-ueditor
   <!-- 编辑器源码文件 -->
   <script type="text/javascript" src="__static__/admin/js/ueditor/ueditor.all.js"></script>
 ```
+  >普通使用案例
+```
+ //###############html代码###############
+    <!---------完整的编辑器功能--------->
+    <div style="display: none">
+             <!-- 加载编辑器的容器 -->
+            <script id="container" type="text/plain"></script>
+    </div>
+    
+  //###############JS代码###############  
+  
+  _Ueditor = UE.getEditor('container');
+    
+```
+  
   >VueJS使用案例
 ```
     //###############html代码###############
