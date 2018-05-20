@@ -26,7 +26,7 @@ composer require dh2y/think-ueditor
    d) 添加下面配置
    "autoload": {
         "psr-4": {
-            "dh2y\\sms\\": "vendor/dh2y/think-ueditor/src"
+            "dh2y\\ueditor\\": "vendor/dh2y/think-ueditor/src"
         }
     },
     e) php composer.phar update
