@@ -11,9 +11,16 @@ composer require dh2y/think-ueditor
 或者
 
 ### 二、require安装
+##### thinkphp5.0安装
 ```
 "require": {
-        "dh2y/think-ueditor":"*"
+        "dh2y/think-ueditor":"1.*"
+},
+```
+##### thinkphp5.1安装
+```
+"require": {
+        "dh2y/think-ueditor":"2.*"
 },
 ```
 
@@ -26,7 +33,7 @@ composer require dh2y/think-ueditor
    d) 添加下面配置
    "autoload": {
         "psr-4": {
-            "dh2y\\ueditor\\": "vendor/dh2y/think-ueditor/src"
+            "dh2y\\sms\\": "vendor/dh2y/think-ueditor/src"
         }
     },
     e) php composer.phar update

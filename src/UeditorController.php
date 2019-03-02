@@ -10,7 +10,7 @@ namespace dh2y\ueditor;
 
 
 
-use think\Config;
+use think\facade\Config;
 
 class UeditorController
 {
