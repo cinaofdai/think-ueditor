@@ -12,6 +12,10 @@
 \think\facade\Route::any('ueditor/[:id]', "\\dh2y\\ueditor\\UeditorController@index");
 
 
+//百度精简版
+\think\facade\Route::any('umeditor/[:id]', "\\dh2y\\ueditor\\UMeditorController@index");
+
+
 
 
 

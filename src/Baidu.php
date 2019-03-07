@@ -22,7 +22,7 @@ class Baidu extends Command
         $this->setName('baidu')
              ->addOption('path', 'd', Option::VALUE_OPTIONAL, 'path to move', null)
              ->addOption('config', null, Option::VALUE_OPTIONAL, 'config to init',null)
-             ->setDescription('move baidu`s ueditor assets');
+             ->setDescription('move baidu`s ueditor and umeditor assets');
              //->setDescription('迁移百度编辑器资源');
     }
 
@@ -30,23 +30,27 @@ class Baidu extends Command
     protected function execute(Input $input, Output $output){
 
         if ($input->hasOption('config')) {
-            $src = __DIR__.DS.'conf'.DS.'ueditor.php';
-            $path = APP_PATH . 'extra' .DS.'ueditor.php';
+            $src = __DIR__.'/'.'conf'.'/'.'ueditor.php';
+            $path = APP_PATH . 'extra' .'/'.'ueditor.php';
             copy($src,$path);
-            $output->writeln("<info>init Ueditor conf Successed</info>");
+
+            $msrc = __DIR__.'/'.'conf'.'/'.'umeditor.php';
+            $mpath = APP_PATH . 'extra' .'/'.'umeditor.php';
+            copy($msrc,$mpath);
+            $output->writeln("<info>init Ueditor and UMeditor conf Successed</info>");
             return;
         }
 
         $option = $input->getOption('path');
-        $path = $option ?: ROOT_PATH . 'public' . DS.'static'.DS;
+        $path = $option ?: ROOT_PATH . 'public' . '/'.'static'.'/';
 
         //不是根目录 放到默认目录下面的相对目录
-        if(DS !=  substr($option,0,1)){
-            $path =ROOT_PATH . 'public' . DS.'static'.DS.$option;
+        if('/' !=  substr($option,0,1)){
+            $path =ROOT_PATH . 'public' . '/'.'static'.'/'.$option;
         }
 
         if (is_dir($path)) {
-            $src = __DIR__.DS.'..'.DS.'assets';
+            $src = __DIR__.'/'.'..'.'/'.'assets';
             $this->moveAssets($src,$path);
             $output->writeln("<info>move Ueditor assets Successed</info>"); //编辑器资源文件初始化成功
         }else{
