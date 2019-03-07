@@ -9,11 +9,11 @@
 
 //  遇到/ueditor/xxx 路由转换访问 UeditorController控制器
 
-\think\facade\Route::any('ueditor/[:id]', "\\dh2y\\ueditor\\UeditorController@index");
+\think\Route::any('ueditor/[:id]', "\\dh2y\\ueditor\\UeditorController@index");
 
 
 //百度精简版
-\think\facade\Route::any('umeditor/[:id]', "\\dh2y\\ueditor\\UMeditorController@index");
+\think\Route::any('umeditor/[:id]', "\\dh2y\\ueditor\\UMeditorController@index");
 
 
 
