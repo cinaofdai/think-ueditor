@@ -10,7 +10,7 @@ namespace dh2y\ueditor;
 
 
 
-use think\facade\Config;
+use think\Config;
 
 class UMeditorController
 {
@@ -25,7 +25,7 @@ class UMeditorController
     public function __construct(){
         header("Content-Type:text/html;charset=utf-8");
         error_reporting( E_ERROR | E_WARNING );
-        $umeditor = Config::get('umeditor.'); //如果存在PHP配置则使用PHP配置 否则使用默认配置
+        $umeditor = Config::get('umeditor'); //如果存在PHP配置则使用PHP配置 否则使用默认配置
         if($umeditor&&isset($ueditor)){
             $this->config = $ueditor;
         }
